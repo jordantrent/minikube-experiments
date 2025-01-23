@@ -40,3 +40,25 @@ Start the dashboard:
 ```bash
 minikube dashboard
 ```
+
+### 5. Deploy a sample application
+
+This is an example deployment from the Kubernetes docs:
+
+```bash
+kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080
+```
+
+## 6. Expose the application
+
+By default, the pod is only accessible from within the cluster, so we need to expose it to the outside world.
+
+```bash
+kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+```
+Since we're using minikube, we use the following command to open a tunnel to the service:
+
+```bash
+minikube service hello-node --url
+```
+This will open a tunnel to the service, and provide a URL that you can use to access the application.

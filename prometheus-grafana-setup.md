@@ -1,11 +1,11 @@
 # Setting up Prometheus and Grafana
 
 ## My Thoughts
-- As usual, Chocolatey is a great way to get install CLI tool on Windows. Make sure you're in Administrator mode.
+- As usual, Chocolatey is a great way to install CLI tools on Windows. Make sure you're in Administrator mode.
 - Helm is a package manager for Kubernetes, simple.
 - Adjust the suggested steps for setting up Grafana to whatever terminal you're using, the default ones they suggest are for Linux.
 - Default username and password for Grafana is `admin`, it will prompt you to change this after first login.
-- Having a slight issue getting Grafana to open on the Node IP, but i'm just running it on localhost for now. My local url is http://127.0.0.1:49754.
+- Having a slight issue getting Grafana to open on the Node IP, but i'm just running it on localhost for now.
 - Remember, Grafana and Prometheus are in the same cluster, access them via the provided address and in this instance, port 80.
 
 ## Prerequisites
@@ -51,4 +51,12 @@ This command will provide a direct URL that you can use to access Grafana.
 
 ## 6. Add Prometheus as a Grafana data source (in the Grafana UI).
 
--Connections, Add new connection, Prometheus, http://prometheus-server.monitoring.svc.cluster.local:80
+Connections, Add new connection, Prometheus, http://prometheus-server.monitoring.svc.cluster.local:80
+
+![](./screenshots/prom-add-connection.png)
+
+## 7. Add a Dashboard
+
+Dashboards, Import, enter a Dashboard URL, Add prometheus as data source.
+
+![](./screenshots/grafana-add-dash.png)

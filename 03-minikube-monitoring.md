@@ -28,7 +28,7 @@ kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agn
 ![](./screenshots/get-deployments.png)
 
 
-## 3. Scale the deployment
+### 3. Scale the deployment
 
 Scale the deployment to 5 replicas, spread accross the nodes:
 
@@ -36,7 +36,7 @@ Scale the deployment to 5 replicas, spread accross the nodes:
 kubectl scale deployment hello-node --replicas=5
 ```
 
-## 4. Check the deployment
+### 4. Check the deployment
 
 Check how the pods are distributed across the nodes:
 

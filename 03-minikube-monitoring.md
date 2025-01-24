@@ -10,7 +10,7 @@
 
 ### 1. Add some nodes
 
-Repeat this a couple of times to add more nodes to the cluster:
+- Repeat this a couple of times to add more nodes to the cluster:
 
 ```bash
 minikube node add
@@ -19,7 +19,7 @@ minikube node add
 
 ### 2. Deploy a sample application
 
-This is an example deployment from the Kubernetes docs:
+- This is an example deployment from the Kubernetes docs:
 
 ```bash
 kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080
@@ -30,7 +30,7 @@ kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agn
 
 ### 3. Scale the deployment
 
-Scale the deployment to 5 replicas, spread accross the nodes:
+- Scale the deployment to 5 replicas, spread accross the nodes:
 
 ```bash
 kubectl scale deployment hello-node --replicas=5
@@ -38,7 +38,7 @@ kubectl scale deployment hello-node --replicas=5
 
 ### 4. Check the deployment
 
-Check how the pods are distributed across the nodes:
+- Check how the pods are distributed across the nodes:
 
 ```bash
 kubectl get pods -o wide
@@ -47,7 +47,7 @@ kubectl get pods -o wide
 
 ### 5. Remove the nodes
 
-I've chosen to remove the extra nodes, but you can leave them running if you want to keep them around for other experiments. Kubernetes will automatically reschedule the pods to the remaining node/nodes.
+- I've chosen to remove the extra nodes, but you can leave them running if you want to keep them around for other experiments. Kubernetes will automatically reschedule the pods to the remaining node/nodes.
 
 ```bash
 minikube node delete <node-name>

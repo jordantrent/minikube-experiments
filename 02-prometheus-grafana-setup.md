@@ -36,27 +36,27 @@ helm install grafana grafana/grafana --namespace monitoring --set adminPassword=
 ![](./screenshots/deploy-grafana.png)
 
 ### 4. Access Grafana
-Get the NodePort for Grafana:
+- Get the NodePort for Grafana:
 ```bash
 kubectl get svc -n monitoring
 ```
-Visit Grafana at `http://<minikube-ip>:<nodeport>`.
+- Visit Grafana at `http://<minikube-ip>:<nodeport>`.
 
 ### 5. Access Grafana with localhost
-Alternatively you can access from localhost on minikube:
+- Alternatively you can access from localhost on minikube:
 ```bash
 minikube service grafana -n monitoring --url
 ```
-This command will provide a direct URL that you can use to access Grafana.
+- This command will provide a direct URL that you can use to access Grafana.
 
 ## 6. Add Prometheus as a Grafana data source (in the Grafana UI).
 
-Connections, Add new connection, Prometheus, http://prometheus-server.monitoring.svc.cluster.local:80
+- Connections, Add new connection, Prometheus, http://prometheus-server.monitoring.svc.cluster.local:80
 
 ![](./screenshots/prom-add-connection.png)
 
 ## 7. Add a Dashboard
 
-Dashboards, Import, enter a Dashboard URL, Add prometheus as data source.
+- Dashboards, Import, enter a Dashboard URL, Add prometheus as data source.
 
 ![](./screenshots/grafana-add-dash.png)

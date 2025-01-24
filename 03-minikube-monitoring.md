@@ -45,13 +45,7 @@ kubectl get pods -o wide
 ```
 ![](./screenshots/scaled-deployment.png)
 
-## 5. Test how the deployment reacts to a Pod Kill
 
-Simulate killing a pod to see if Kubernetes reschedules it
-
-```bash
-kubectl get pods -o wide
-```
 
 
 

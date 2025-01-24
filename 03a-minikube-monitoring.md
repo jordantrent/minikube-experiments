@@ -3,7 +3,7 @@
 ## My Thoughts
 
 - Lets keep this really simple, minikube is limited in scope, and I'm just using a single node for this exercise.
-- I'm using the a prebuilt dashboard, but I'll be tweaking it a bit to get the data I need.
+- I'm using a prebuilt dashboard, but I'll be tweaking it a bit to get the data I need.
 - It's a good exercise in using PromQL, which is very intuitive and easy to use.
 - I'm using my deployment from step 3, it's called hello-node and it's in the default namespace.
 

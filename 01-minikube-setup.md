@@ -2,7 +2,7 @@
 
 ## My Thoughts
 
-- Minikube is a great way to get started with Kubernetes, I can just focus on gaining an undsetanding of the basics and then move on to more complex topics like CI/CD, etc.
+- Minikube is a great way to get started with Kubernetes, I can just focus on gaining an understanding of the basics.
 - The CLI is powerful, and makes it very easy to get going. I'm not sure if I'll ever need to use the GUI, but it's nice to have it available.
 - The docs are great, and providing you have a basic understanding of the terminal, you can get started quickly.
 - The dashboard is a great way to get a feel for the cluster, I'm really excited to see what it can do.

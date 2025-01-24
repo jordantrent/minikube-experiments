@@ -45,6 +45,14 @@ kubectl get pods -o wide
 ```
 ![](./screenshots/scaled-deployment.png)
 
+### 5. Remove the nodes
+
+I've chosen to remove the extra nodes, but you can leave them running if you want to keep them around for other experiments. Kubernetes will automatically reschedule the pods to the remaining node/nodes.
+
+```bash
+minikube node delete <node-name>
+```
+
 
 
 

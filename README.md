@@ -5,5 +5,5 @@
 - [x] Minikube Monitoring
 - [x] Grafana Dashboard/PromQL
 - [ ] Chaos Engineering
-- [ ] Warnings/Alerts
+- [ ] Warnings/Alerts (EFK)
 - [ ] Autoscaling

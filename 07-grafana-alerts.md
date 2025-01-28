@@ -103,3 +103,15 @@ kubectl apply -f pod-chaos.yaml
 - What you'll see is much more readable, we aren't trying to fix the problem in Slack anyway, it's just pointing us in the right direction to go and look deeper in the Logs, whether that's in Loki or use kubectl.
 
 ![](./screenshots/alert-slack-custom.png)
+
+### 7. A little bonus
+
+- I added the following to my description field on the alert
+
+```bash
+Logs: http://localhost:3000/d/liz0yRCZz/loki-dashboard?orgId=1&var-namespace={{ $labels.namespace}}&var-workload=&var-pod=All&var-search={{ $labels.name }}&from=now-1h&to=now
+```
+
+- This opens my log dashboard with a search for the pod in question, it's pretty cool!
+
+![](./screenshots/dash-logs-link.png)

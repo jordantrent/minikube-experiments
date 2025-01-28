@@ -119,3 +119,4 @@ kubectl get secret loki-grafana -n monitoring -o jsonpath="{.data.admin-password
 - If that hurts your eyes a little, you can change to Prettify JSON on the slider above the logs:
 
 ![](./screenshots/prettify-json.png)
+

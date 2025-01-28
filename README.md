@@ -6,5 +6,5 @@
 - [x] Grafana Dashboard/PromQL
 - [x] Chaos Engineering Basics
 - [x] Loki Stack
-- [ ] Warnings/Alerts
+- [x] Warnings/Alerts
 - [ ] Autoscaling

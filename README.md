@@ -4,6 +4,7 @@
 - [x] Prometheus and Grafana Setup
 - [x] Minikube Monitoring
 - [x] Grafana Dashboard/PromQL
-- [ ] Chaos Engineering
+- [x] Chaos Engineering Basics
+- [x] Loki Stack
 - [ ] Warnings/Alerts
 - [ ] Autoscaling

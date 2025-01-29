@@ -7,4 +7,4 @@
 - [x] Chaos Engineering Basics
 - [x] Loki Stack
 - [x] Warnings/Alerts
-- [ ] Autoscaling
+- [x] Autoscaling

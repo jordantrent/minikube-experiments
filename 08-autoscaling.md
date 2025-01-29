@@ -11,7 +11,7 @@
 
 ### 1. Enabling Metrics Server
 
-- This is required for Hoirizontal Pod Autoscaler to work.
+- This is required for Horizontal Pod Autoscaler to work.
 
 ```bash
 minikube addons enable metrics-server
